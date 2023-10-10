@@ -7,13 +7,13 @@ Web application architecture is a high-level structure that determines the way y
 First, let’s define a web app. It’s a client-server application, where there’s a browser (a client) and a web server. The logic of a web application is distributed among the server and the client, there’s a channel for information exchange, and data storage located locally or in the cloud.
 
 Web apps appeared as a website evolution stage and, indeed, have a lot in common. The factors that distinguish a website from a web application are interactivity, integration and authentication.
-![image](https://github.com/TheArchitectAntonio/WebApplicationArchitecture/assets/147462884/8079a8aa-d430-4d78-a748-435390773dd0)
+![image](https://github.com/TheArchitectAntonio/WebApplicationArchitecture/assets/147462884/9b1c19ed-aacb-4e6d-ac46-3566cca1ab99)
 
 In other words, the more customizable, interactive and functional a website is, the closer it is to being called a web application. 
 
 # 3 TIER ARCHITECTURE IN WEB DEVELOPMENT
 Modern web apps still use the 3 tier architecture concept, which separates applications into presentation tier, application tier, and data tier.
-![image](https://github.com/TheArchitectAntonio/WebApplicationArchitecture/assets/147462884/65b30928-4f0f-435c-869b-850dc1ec0239)
+![image](https://github.com/TheArchitectAntonio/WebApplicationArchitecture/assets/147462884/1151b473-abad-4a39-a0ac-b118c8f16616)
 
 ithin the 3 tier web application architecture, each layer runs on its own infrastructure, and can be developed in parallel by different teams. Such a structure allows to update and scale each tier as needed without impacting the other tiers.
 
@@ -21,7 +21,7 @@ ithin the 3 tier web application architecture, each layer runs on its own infras
 To help you understand if the suggested approach for your product really fits your business needs, we’ll evaluate modern web app architecture types according to the criteria we consider most vital for businesses, i.e. performance, UI, SEO, linkability and the speed of realization on the development side. 
 
 # SERVER SIDE RENDERING (SSR)
-![image](https://github.com/TheArchitectAntonio/WebApplicationArchitecture/assets/147462884/055bd362-575d-4fe2-9b05-59e06f5211d1)
+![image](https://github.com/TheArchitectAntonio/WebApplicationArchitecture/assets/147462884/a293f530-6d84-4cc4-8968-d443fd2aea2a)
 
 Talking about the very basic web principles we usually mean the client-server architecture. A client requests content from a server, where the business logic and a database are located. Using simple JavaScript, a static web page sends the request to a service (possibly an API). The service returns the data and displays an HTML page to the client. 
 
@@ -31,8 +31,7 @@ Pros & cons. The fact HTML is rendered on the server provides a number of advant
 
 # STATIC SITE GENERATION (SSG)
 The process of Static Site Generation involves a generator that automates coding of individual HTML pages, creating them from templates. Choosing Static Site Generation, you receive a simple static website located on a CDN or any server, that holds an already generated HTML page to be given to users upon request. So, no need to generate it each time when someone visits your website – the server just sends the already existing data through an API.
-
-![image](https://github.com/TheArchitectAntonio/WebApplicationArchitecture/assets/147462884/7b8ef994-6c46-4ec7-9d3d-bfb6e28e208a)
+![image](https://github.com/TheArchitectAntonio/WebApplicationArchitecture/assets/147462884/2abe0fd8-8e2a-491d-823c-ae85f25739be)
 
 Pros & cons. First and foremost, this approach is suitable for websites only. Along with that, the content of the generated website pages does not change unless you add new data or components. It means that you’ll have to completely re-generate the website once you wish to add new content. This is one of the major drawbacks that seriously limits the business cases to which it is applicable.
 
@@ -42,8 +41,7 @@ Examples of simple static-site generators are Jekyll and Hugo, while Gatsby and 
 
 # SINGLE PAGE APPLICATION (SPA)
 SPA is the type of web application that works within a browser. It doesn’t require reloading the page when new data needs to be displayed. This web app architecture type is extensively used in our daily life: Facebook, Gmail, Google Maps, GitHub and Twitter – all of them are single-page apps. 
-
-![image](https://github.com/TheArchitectAntonio/WebApplicationArchitecture/assets/147462884/e225b9bd-6f7a-47b9-a25f-5d2878e3b10b)
+![image](https://github.com/TheArchitectAntonio/WebApplicationArchitecture/assets/147462884/853f2b73-5e2a-4e4c-ad27-2a9a8475e3cd)
 
 Pros & cons. In contrast to SSR and SSG, SPA allows you to build an interactive web app. It uses an API to communicate with the server. This architecture is good for easily scaling your product. Also if a mobile app is needed, no additional efforts are required for API development – the mobile app could use the same API as Web.
 
@@ -51,8 +49,7 @@ SPA grants fast rendering after the app is fully loaded in the browser and creat
 
 # PROGRESSIVE WEB APP (PWA)
 It seems like during the past few years, everybody’s talking about PWAs. What’s so special about them and do they really solve all the issues of web app development?
-
-![image](https://github.com/TheArchitectAntonio/WebApplicationArchitecture/assets/147462884/a8e8aef4-1a79-4bc0-a19f-bf4082f593fa)
+![image](https://github.com/TheArchitectAntonio/WebApplicationArchitecture/assets/147462884/57f5f9bf-510c-451c-8e7f-85c9c3485773)
 
 Progressive web app architecture uses the logic of a single page web app with some services running next, in the browser. This means the main point to take into account is that both the browser and the OS need to support this set of standards. 
 
@@ -64,15 +61,13 @@ Pros & cons. Progressive web app architecture is supported by Windows, Android a
 
 # ISOMORPHIC
 Another modern web app architecture is called isomorphic. This is a type of JavaScript application that can run both on the client-side and the server-side. First, the client loads an HTML, where the JavaScript app is uploaded to the browser, then the app starts running like an SPA. 
-
-![image](https://github.com/TheArchitectAntonio/WebApplicationArchitecture/assets/147462884/5d3d3b17-a0aa-418c-b6da-6278a90a10a4)
+![image](https://github.com/TheArchitectAntonio/WebApplicationArchitecture/assets/147462884/b3ac17fb-c50d-48c4-84e5-88d48372e54a)
 
 Pros & cons. Unlike server-side rendering, isomorphic web architecture provides quick data updates, responsiveness and multiple UI/UX options. It ensures quicker rendering when the server is loaded, as the processed code is transferred to the client. And unlike client-side rendering, it grants an instant display in the browser, user-friendly routing, SEO and linkability. The only drawback this web app architecture type has is that it’s fully supported only by JavaScript. Most often, this means that the tech stack to choose from is limited to JS-based frameworks and tools.
 
 # MICRO FRONT-END
 Among the other web application design principles, we distinguish micro front-end, an approach that is built based on the decomposition of a front-end app into separate “micro-apps” working together. For the end-user, they are all located on a single page.
-
-![image](https://github.com/TheArchitectAntonio/WebApplicationArchitecture/assets/147462884/f2fe0b82-e961-46ed-8290-72e37d4e2282)
+![image](https://github.com/TheArchitectAntonio/WebApplicationArchitecture/assets/147462884/1eba5a95-2e25-471f-a138-99c386890de5)
 
 This web app architecture type is modular, which means that the pages and widgets are completely independent apps. With such an approach, development and deployment are running in parallel. But at the same time, the structure makes your app complicated and causes code duplication.
 
@@ -82,8 +77,7 @@ This concept was first formulated in 2013 by ​​Nicholas C. Zakas, and is now
 “Separating the back-end UI layer out from the back-end business logic just makes sense in larger web architecture. Why should the front-end engineers care what server-side language is necessary to perform business-critical functions? Why should that decision leak into the back-end UI layer? The needs of the front-end are fundamentally different from the needs of the back-end”, this is how Zakas explains the main principle of this web application development type.
 
 This type of web app architecture consists of a Node.js-based server and a UI layer. Along with that, the business logic server can be written in whatever language (let’s take PHP as an example) and use an API to communicate with the server.
-
-![image](https://github.com/TheArchitectAntonio/WebApplicationArchitecture/assets/147462884/0c9bea6c-e865-409c-8348-0e78d2613581)
+![image](https://github.com/TheArchitectAntonio/WebApplicationArchitecture/assets/147462884/da2006c3-63e5-4f64-891c-6c202ed33812)
 
 In fact, the new web front-end approach allows us to use all the advantages of the isomorphic architecture type, SSR or SPA, API for mobile devices and linkability. Unlike isomorphic web apps, no restrictions to the language or business logics platform appear. Although it should be noted that developing a web app that uses the new web frontend logic takes longer than the one using SSG or SSR type. To save time for development, we suggest using the Next.js and Nuxt.js frameworks.
 
@@ -94,8 +88,7 @@ Speaking of web application architecture, we’ll briefly cover its server-side 
 
 # AWS SERVERLESS WEB APP ARCHITECTURE
 AWS serverless services is one of the most popular cloud solutions used to implement popular patterns such as microservices, mobile backends, and Single-Page Applications. The below scheme gives an understanding of how AWS web services can be used for creating a web application using the 3 tier architecture logic we explained earlier.
-
-![image](https://github.com/TheArchitectAntonio/WebApplicationArchitecture/assets/147462884/9a076e59-3160-44fa-aa1a-711a6b454e13)
+![image](https://github.com/TheArchitectAntonio/WebApplicationArchitecture/assets/147462884/50f35517-98b4-4254-93b3-ece5010de300)
 
 # AZURE WEB APP ARCHITECTURE
 
